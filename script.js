@@ -1,10 +1,10 @@
 let products = [
-    { id: 1, name: 'Curso 1', price: 10.99, image: './imagem_curso/imagem_curso.webp' },
-    { id: 2, name: 'Curso 2', price: 15.99, image: './imagem_curso/imagem_curso.webp' },
-    { id: 3, name: 'Curso 3', price: 18.99, image: './imagem_curso/imagem_curso.webp' },
-    { id: 4, name: 'Curso 4', price: 75.99, image: './imagem_curso/imagem_curso.webp' },
-    { id: 5, name: 'Curso 5', price: 38.99, image: './imagem_curso/imagem_curso.webp' },
-    { id: 6, name: 'Curso 6', price: 20.99, image: './imagem_curso/imagem_curso.webp' }
+    { id: 1, name: 'Composição para ambientes', price: 59.90, image: 'imagem_curso/arranjo_ambientes.jpeg' },
+    { id: 2, name: 'Arranjo para aniversário', price: 59.90, image: './imagem_curso/arranjo_aniversarios.jpeg' },
+    { id: 3, name: 'Especial para românticos', price: 49.90, image: './imagem_curso/arranjo_romanticos.jpeg' },
+    { id: 4, name: 'Flores com chocolates', price: 75.99, image: './imagem_curso/arranjo_chocolate.jpg' },
+    { id: 5, name: 'Arranjo para eventos', price: 38.99, image: './imagem_curso/arranjo_eventos.jpeg' },
+    { id: 6, name: 'Composição Simples', price: 29.90, image: './imagem_curso/arranjo_simples.jpeg' }
 ];
 
 let cart = [];
@@ -53,6 +53,8 @@ function renderCart() {
             <td>1</td>
             <td>R$${product.price}</td>
             <td>R$${product.price}</td>
+            <td class="btn_exc"><button><i class="fa-solid fa-trash"></i></button></td>
+            <td class="btn_add"><button><i class="fa-solid fa-plus"></i></button></td>
         `;
         cartTable.appendChild(cartRow);
     });
