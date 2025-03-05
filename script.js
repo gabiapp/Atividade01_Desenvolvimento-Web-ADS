@@ -1,3 +1,14 @@
+const logoButton = document.querySelector('.logo');
+
+logoButton.addEventListener('click', function(event) {
+    event.preventDefault(); 
+    
+    window.scrollBy({
+        top: 500, 
+        behavior: 'smooth' 
+    });
+});
+
 let products = [
     { id: 1, name: 'Composição para ambientes', price: 59.90, image: 'imagem_curso/arranjo_ambientes.jpeg' },
     { id: 2, name: 'Arranjo para aniversário', price: 59.90, image: './imagem_curso/arranjo_aniversarios.jpeg' },
