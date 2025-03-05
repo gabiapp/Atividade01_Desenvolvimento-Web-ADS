@@ -53,8 +53,8 @@ function renderCart() {
             <td>1</td>
             <td>R$${product.price}</td>
             <td>R$${product.price}</td>
-            <td class="btn_exc"><button><i class="fa-solid fa-trash"></i></button></td>
-            <td class="btn_add"><button><i class="fa-solid fa-plus"></i></button></td>
+            <td><button class="btn_exc"><i class="fa-solid fa-trash"></i></button></td>
+            <td ><button class="btn_add"><i class="fa-solid fa-plus"></i></button></td>
         `;
         cartTable.appendChild(cartRow);
     });
