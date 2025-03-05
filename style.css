@@ -10,11 +10,34 @@ body {
 }
 
 header {
-    background-color: #2C3E50; 
+    background-color: #4682B4; 
     color: white;
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.logo:hover {
+    color: #00FFFF; 
+    transition: color 0.5s ease; 
+    font-size: 1.7em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    color: #00FFFF; 
+    transition: color 0.5s ease;
+    font-size: 1.2em; 
 }
 
 nav ul {
@@ -51,8 +74,19 @@ nav li {
 }
 
 .hero button:hover {
-    background-color: #3498db;
-    color: white;
+    background-color: #0000CD;
+}
+
+.hero button a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+h2{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
 }
 
 .product {
