@@ -131,10 +131,16 @@ h2{
     background-color: #ecf0f1;
 }
 
-.cart table {
+.cart-table {
     width: 100%;
     border-collapse: collapse;
 }
+
+td {
+    text-align: center;  
+    vertical-align: middle; 
+}
+
 
 .cart th, .cart td {
     border: 1px solid #ddd;
@@ -151,9 +157,6 @@ h2{
     font-size: 14px;
 }
 
-.cart td:last-child {
-    text-align: right;
-}
 
 #total {
     font-weight: bold;
@@ -205,9 +208,4 @@ footer {
 
 .product button:hover {
     background-color: #3498db;
-}
-
-.btn_add, .btn_exc {
-    display: inline-block;
-    align-items: center;
 }
