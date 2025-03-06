@@ -3,50 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="index.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylespagamento.css" media="screen">
+    
     <title>Forma de Pagamento</title>
 </head>
 <body>
 
     <div>
         <h1 id="titulo">Pagamento</h1>
-        <p id="subtitulo">Escolha uma forma para completar a compra</p>
+        <p id="subtitulo">Escolha uma forma de pagamento para completar a compra</p>
         <br>
     </div>
 
     <form>
-        
         <div class="campo">
-            <label for="senioridade"><strong>Senioridade</strong></label>
-            <select id="senioridade" required>
-                <option selected disabled value="">Selecione</option>
-                <option>Junior</option>
-                <option>Pleno</option>
-                <option>Senior</option>
+            <label for="pagamento"><strong>Selecione uma forma de pagamento</strong></label>
+            <select id="pagamento" required>
+                <option selected disabled value="">Pix</option>
+                <option>Boleto</option>
+                <option>Cartão</option>
             </select>
         </div>
-
-        <fieldset class="grupo">
-            <div id="check">
-                <label><strong>Selecione as tecnologias que utiliza:</strong></label><br></br>
-                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
-                <label for="tecnologia1">HTML</label>
-                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
-                <label for="tecnologia2">CSS</label>
-                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
-                <label for="tecnologia3">JavaScript</label>
-                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="Java">
-                <label for="tecnologia4">Java</label>
-                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="PHP">
-                <label for="tecnologia5">PHP</label>
-                <input type="checkbox" id="tecnologia6" name="tecnologia6" value="React">
-                <label for="tecnologia6">React</label>
-                <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Node">
-                <label for="tecnologia7">Node</label>
-                <input type="checkbox" id="tecnologia8" name="tecnologia8" value="Python">
-                <label for="tecnologia8">Python</label>
-            </div>
-        </fieldset>
 
         <div class="campo">
             <br>
