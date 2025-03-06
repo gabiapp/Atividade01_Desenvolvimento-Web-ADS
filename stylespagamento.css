@@ -32,6 +32,12 @@ nav a {
     
 }
 
+nav a:hover {
+    color: #00FFFF; 
+    transition: color 0.3s ease;
+    font-size: 1.2em;
+}
+
 #titulo, #subtitulo {
     margin-top: 1.5%;
     font-family: "Poppins", sans-serif;
