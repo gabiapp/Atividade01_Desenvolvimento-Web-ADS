@@ -5,20 +5,15 @@
     padding: 0;
 }
 
-#titulo{
-    font-family: "Poppins", sans-serif;
-    color: #333;
-    margin-left: 7%;
+.container_h1 {
+    margin: 25px;
 }
 
-#subtitulo{
+#titulo, #subtitulo {
     font-family: "Poppins", sans-serif;
     color: #333;
-    margin-left: 10%;
-}
-
-#check{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
 }
 
 fieldset{
@@ -30,9 +25,41 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 1em;
     color: #333;
-    margin-left: 36%;
     margin-top: 2%;
     justify-content: center;
+}
+
+header {
+    background-color: #4682B4;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+
+nav {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.container_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 input, select, textarea, button {
@@ -40,36 +67,36 @@ input, select, textarea, button {
     font-size: 1em;
     color: #333;
     border-radius: 5px;
+    margin-bottom: 1em;
 }
 
-.grupo:before, .grupo:after {
-    display: table;
-}
-
-.grupo:after {
-    clear: both;
+.grupo {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .campo {
-    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
 }
 
 .campo label {
     margin-bottom: 0.2em;
+    max-width: 100%;
     color: #333;
-    display: block;
 }
 
-fieldset.grupo .campo {
-    float: left;
-    margin-right: 1em;
-}
 
 .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
     padding: 0.2em;
     border: 1px solid #333;
     box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
-    display: block;
+    max-width: 100%;
+    
 }
 
 .campo select option {
@@ -78,6 +105,19 @@ fieldset.grupo .campo {
 
 .campo input:focus, .campo select:focus, .campo textarea:focus{
     background: #E0E0F8 ;
+}
+
+.campo_refe {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    margin-top: 35px;
+    gap: 15px;
+}
+
+.campo_botao {
+    display: flex;
+    justify-content: center;
 }
 
 .botao {
@@ -89,11 +129,6 @@ fieldset.grupo .campo {
     padding: 0.2em 0.6em;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-    position: absolute;
-    margin-top: 15px;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
 }
 
 .botao:hover {
@@ -105,4 +140,13 @@ fieldset.grupo .campo {
 .botao, select{
     cursor: pointer;
 }
+
+footer {
+    font-family: "Poppins", sans-serif;
+    background-color: #2C3E50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
 

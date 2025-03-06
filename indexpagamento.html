@@ -7,32 +7,33 @@
     
     <title>Forma de Pagamento</title>
 </head>
+
 <body>
+
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="index.html"> INÍCIO</a></li>
+                <li> <a href="indexcontato.html"> CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div>
         <h1 id="titulo">Pagamento</h1>
-        <p id="subtitulo">Escolha uma forma de pagamento para completar a compra</p>
+        <p id="subtitulo">Escolha uma forma de pagamento para completar a compra:</p>
         <br>
     </div>
 
-    <form>
-        <div class="campo">
-            <label for="pagamento"><strong>Selecione uma forma de pagamento</strong></label>
-            <select id="pagamento" required>
-                <option selected disabled value="">Pix</option>
-                <option>Boleto</option>
-                <option>Cartão</option>
-            </select>
-        </div>
+    <div class="opcoes">
+        <button class="botao">Pix</button>
+        <button class="botao">Boleto</button>
+        <button class="botao">Cartão</button>
+    </div>
 
-        <div class="campo">
-            <br>
-            <label for="experiencia"><strong>Conte um pouco da sua experiência:</strong></label>
-            <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
-        </div>
+    <footer>
+        <p>&copy; Flores do Sul</p>
+    </footer>
 
-        <button class="botao" type="submit"  onsubmit="">Concluído</button>
-
-    </form>
 </body>
 </html>

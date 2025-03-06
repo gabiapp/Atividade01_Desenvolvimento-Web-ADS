@@ -8,13 +8,22 @@
 </head>
 <body>
 
-    <div>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="index.html"> INÍCIO</a></li>
+                <li> <a href="indexcontato.html"> CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container_h1">
         <h1 id="titulo">Cadastro de Endereço</h1>
         <p id="subtitulo">Complete suas informações</p>
         <br>
     </div>
 
-    <form>
+    <form class="container_form">
         <fieldset class="grupo">
             <div class="campo">
                 <label><strong>CEP</strong></label>
@@ -25,9 +34,7 @@
                 <label><strong>Cidade</strong></label>
                 <input type="text" name="cidade" id="cidade" required>
             </div>
-        </fieldset>
-
-        <fieldset class="grupo">
+       
             <div class="campo">
                 <label><strong>Bairro</strong></label>
                 <input type="text" name="bairro" id="bairro" required>
@@ -37,29 +44,35 @@
                 <label><strong>Rua</strong></label>
                 <input type="text" name="rua" id="rua" required>
             </div>
+
+            <div class="campo">
+                <label><strong>N°</strong></label>
+                <input type="text" name="rua" id="rua" required>
+            </div>
+    
+            <div class="campo_refe">
+                <label><strong>Esse endereço é referente à:</strong></label>
+                <label>
+                    <input type="radio" name="endereco" value="casa" checked>Casa
+                </label>
+                <label>
+                    <input type="radio" name="endereco" value="trabalho">Trabalho
+                </label>
+            </div>
+    
+            <div class="campo_refe">
+                <label for="referencia"><strong>Ponto de referência: </strong></label>
+                <textarea rows="3" style="width: 26em" id="referencia" name="referencia"></textarea>
+            </div>
+
+            <div class="campo_botao">
+                <button class="botao" type="submit"  onclick="window.location.href='indexpagamento.html'">Confirmar</button>
+            </div>
         </fieldset>
-
-        <div class="campo">
-            <label><strong>N°</strong></label>
-            <input type="text" name="rua" id="rua" required>
-        </div>
-
-        <div class="campo">
-            <label><strong>Esse endereço é referente à:</strong></label>
-            <label>
-                <input type="radio" name="endereco" value="casa" checked>Casa
-            </label>
-            <label>
-                <input type="radio" name="endereco" value="trabalho">Trabalho
-            </label>
-        </div>
-
-        <div class="campo">
-            <label for="referencia"><strong>Ponto de referência: </strong></label>
-            <textarea rows="3" style="width: 26em" id="referencia" name="referencia"></textarea>
-        </div>
-
-        <button class="botao" type="submit"  onclick="window.location.href='indexpagamento.html'">Confirmar</button>
     </form>
+
+    <footer>
+        <p>&copy; Flores do Sul</p>
+    </footer>
 </body>
 </html>
