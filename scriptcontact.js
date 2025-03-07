@@ -1,5 +1,5 @@
 const form = document.getElementById('contact-form');
-e.preventdefault();
+e.preventDefault();
 const name= docuemnt.getElementById('name').value;
 const email = document.getElementById('email')
 const message = document.getElementById('message').value;
