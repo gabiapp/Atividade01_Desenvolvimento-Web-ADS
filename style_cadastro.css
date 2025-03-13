@@ -76,7 +76,7 @@ nav a:hover {
 }
 
 .campo {
-    background-color: rgb(6, 7, 7);
+    background-color: rgb(240, 248, 248);
     border: 1px;
     border-radius: 10px;
     padding: 5px 0 5px 15px;
@@ -84,18 +84,18 @@ nav a:hover {
     width: 250px;
     height: 15px;
     margin: 15px 0;
-    color: white;
+    color:  rgb(0, 0, 0);
 }
 .genero {
-    background-color: rgb(6, 7, 7);
+    background-color:white;
     border: 1px;
     border-radius: 10px;
     padding: 5px 0 5px 5px;
-    box-shadow: 5px 5px 10px rgb(11, 54, 94);
+    box-shadow: 5px 5px 10px rgb(67, 116, 161);
     width: 265px;
     height: 25px;
     margin: 15px 0;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .registro {
@@ -113,14 +113,3 @@ nav a:hover {
     cursor: pointer;
 }
 
-footer {
-    background-color: #2C3E50;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
-    font-size: 1em;
-}
