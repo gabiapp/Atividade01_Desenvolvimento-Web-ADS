@@ -10,12 +10,12 @@ logoButton.addEventListener('click', function(event) {
 });
 
 let products = [
-    { id: 1, name: 'Composição para ambientes', price: 59.90, image: 'imagem_curso/arranjo_ambientes.jpeg' },
-    { id: 2, name: 'Arranjo para aniversário', price: 59.90, image: './imagem_curso/arranjo_aniversarios.jpeg' },
-    { id: 3, name: 'Especial para românticos', price: 49.90, image: './imagem_curso/arranjo_romanticos.jpeg' },
-    { id: 4, name: 'Flores com chocolates', price: 75.99, image: './imagem_curso/arranjo_chocolate.jpg' },
-    { id: 5, name: 'Arranjo para eventos', price: 38.99, image: './imagem_curso/arranjo_eventos.jpeg' },
-    { id: 6, name: 'Composição Simples', price: 29.90, image: './imagem_curso/arranjo_simples.jpeg' }
+    { id: 1, name: 'Composição para ambientes', price: 59.90, image: '../imagem_curso/arranjo_ambientes.jpeg' },
+    { id: 2, name: 'Arranjo para aniversário', price: 59.90, image: '../imagem_curso/arranjo_aniversarios.jpeg' },
+    { id: 3, name: 'Especial para românticos', price: 49.90, image: '../imagem_curso/arranjo_romanticos.jpeg' },
+    { id: 4, name: 'Flores com chocolates', price: 75.99, image: '../imagem_curso/arranjo_chocolate.jpg' },
+    { id: 5, name: 'Arranjo para eventos', price: 38.99, image: '../imagem_curso/arranjo_eventos.jpeg' },
+    { id: 6, name: 'Composição Simples', price: 29.90, image: '../imagem_curso/arranjo_simples.jpeg' }
 ];
 
 let cart = [];
