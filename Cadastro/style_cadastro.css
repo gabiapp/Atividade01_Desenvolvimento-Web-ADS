@@ -113,3 +113,10 @@ nav a:hover {
     cursor: pointer;
 }
 
+footer {
+    background-color: #2C3E50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    clear: both;
+}
