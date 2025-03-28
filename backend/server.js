@@ -72,10 +72,6 @@ app.put("/atualizarUsuario/:id", (req, res) => {
   const { nome, email, dataNascimento, telefone, cpf, genero } = req.body;
   const userId = req.params.id;
 
-  // Validate input
-  if (!userId) {
-    return res.status(400).json({ error: "ID do usuário é obrigatório" });
-  }
   db.query(
     "UPDATE tb_usuario SET tx_nome = ?, tx_email = ?, dt_nascimento = ?, nr_telefone = ?, tx_cpf = ?, cd_genero = ? WHERE id_usuario = ?", 
     [nome, email, dataNascimento, telefone, cpf, genero, userId], 

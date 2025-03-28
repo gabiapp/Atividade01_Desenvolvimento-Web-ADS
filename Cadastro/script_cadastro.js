@@ -149,6 +149,26 @@ function formatarCPF(cpf) {
     return cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
 }
 
+// Função de abrir edição
+async function abrirEdicao(id) {
+    try {
+        if (!id || isNaN(id)) throw new Error('ID inválido');
+
+        const response = await fetch(`http://localhost:3000/adquirirUsuario/${id}`);
+        if (!response.ok) {
+            if (response.status === 404) throw new Error('Usuário não encontrado');
+            throw new Error(`Erro ${response.status}: ${response.statusText}`);
+        }
+
+        const usuario = await response.json();
+        criarModalEdicao(usuario);
+
+    } catch (error) {
+        console.error('Erro na abertura de edição:', error);
+        alert(error.message);
+    }
+}
+
 // Função de Edição 
 function criarModalEdicao(usuario) {
 
@@ -359,26 +379,6 @@ async function salvarEdicao(id) {
 
     } catch (error) {
         console.error('Erro na edição:', error);
-        alert(error.message);
-    }
-}
-
-// Função de abrir edição
-async function abrirEdicao(id) {
-    try {
-        if (!id || isNaN(id)) throw new Error('ID inválido');
-
-        const response = await fetch(`http://localhost:3000/adquirirUsuario/${id}`);
-        if (!response.ok) {
-            if (response.status === 404) throw new Error('Usuário não encontrado');
-            throw new Error(`Erro ${response.status}: ${response.statusText}`);
-        }
-
-        const usuario = await response.json();
-        criarModalEdicao(usuario);
-
-    } catch (error) {
-        console.error('Erro na abertura de edição:', error);
         alert(error.message);
     }
 }
